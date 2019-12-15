@@ -1,2 +1,2 @@
 # algum-projeto-irado
-behare: something is written in here.
+beware: something is written in here.

@@ -1,21 +1,20 @@
 import cv2
 import numpy as np
 
-if __name__ == "__main__":
-
-    img = cv2.imread('android.png')
-    img2 = cv2.imread('insta.png')
+def soma():
+    img = cv2.imread('./imagens/imagem1.png')
+    img2 = cv2.imread('./imagens/imagem2.png')
 
     y1, z1, rgb1 = img.shape
     y2, z2, rgb2 = img2.shape
 
     out = np.zeros((y1, z1, rgb1), dtype=np.uint8)
 
-    cv2.imshow('imagem', img)
+    cv2.imshow('imagem1', img)
     cv2.waitKey(0)
     cv2.destroyAllWindows()
 
-    cv2.imshow('imagem', img2)
+    cv2.imshow('imagem2', img2)
     cv2.waitKey(0)
     cv2.destroyAllWindows()
 
@@ -28,7 +27,7 @@ if __name__ == "__main__":
                 else:
                     out.itemset((i, u, j), 255)
 
-    cv2.imshow('imagem', out)
+    cv2.imshow('soma', out)
     cv2.waitKey(0)
     cv2.destroyAllWindows()
 

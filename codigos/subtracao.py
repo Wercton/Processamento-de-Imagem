@@ -9,14 +9,6 @@ def subtracao():
 
     out = np.zeros((y1, z1, rgb1), dtype=np.uint8)
 
-    cv2.imshow('imagem1', img)
-    cv2.waitKey(0)
-    cv2.destroyAllWindows()
-
-    cv2.imshow('imagem2', img2)
-    cv2.waitKey(0)
-    cv2.destroyAllWindows()
-
     for i in range(y1 - 1):
         for u in range(z1 - 1):
             for j in range(rgb1):

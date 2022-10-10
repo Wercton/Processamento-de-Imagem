@@ -1,5 +1,6 @@
 import cv2
 import numpy as np
+from .Utils import exibir_imagem
 
 def subtracao(img1, img2):
     y1, z1, rgb1 = img1.shape
@@ -15,8 +16,6 @@ def subtracao(img1, img2):
                 else:
                     out.itemset((i, u, j), 0)
 
-    cv2.imshow('subtracao', out)
-    cv2.waitKey(0)
-    cv2.destroyAllWindows()
+    exibir_imagem(out, 'subtracao')
 
     return out

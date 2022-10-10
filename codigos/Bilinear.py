@@ -1,5 +1,6 @@
 import cv2
 import numpy as np
+from .Utils import exibir_imagem
 
 
 def bilinear_ampliar(img):
@@ -31,9 +32,7 @@ def bilinear_ampliar(img):
                             x = (out.item(i + 1, u + 1, j) + out.item(i + 1, u - 1, j) + out.item(i - 1, u + 1, j) + out.item(i - 1, u - 1, j)) // 4
                             out.itemset((i, u, j), x)
 
-    cv2.imshow('bilinear', out)
-    cv2.waitKey(0)
-    cv2.destroyAllWindows()
+    exibir_imagem(out, 'bilinear ampliagem')
     
     return out
 
@@ -47,8 +46,7 @@ def bilinear_reduzir(img):
                 z = (img.item(i * 2 + 1, u * 2, j) + img.item(i * 2, u * 2 + 1, j) + img.item(i * 2 + 1, u * 2 + 1, j) + img.item(i * 2, u * 2, j)) // 4
                 out.itemset((i, u, j), z)
 
-    cv2.imshow('bilinear', out)
-    cv2.waitKey(0)
-    cv2.destroyAllWindows()
+    
+    exibir_imagem(out, 'bilinear reducao')
 
     return out

@@ -1,12 +1,9 @@
 import cv2
 import numpy as np
+from .Utils import exibir_imagem
 
 def soma(img1, img2):
-    # img = cv2.imread('./imagens/imagem1.png')
-    # img2 = cv2.imread('./imagens/imagem2.png')
-
     y1, z1, rgb1 = img1.shape
-    y2, z2, rgb2 = img2.shape
 
     out = np.zeros((y1, z1, rgb1), dtype=np.uint8)
 
@@ -19,9 +16,7 @@ def soma(img1, img2):
                 else:
                     out.itemset((i, u, j), 255)
 
-    cv2.imshow('soma', out)
-    cv2.waitKey(0)
-    cv2.destroyAllWindows()
+    exibir_imagem(out, 'soma')
     
     return out
 

@@ -1,5 +1,6 @@
 import cv2
 import numpy as np
+from .Utils import exibir_imagem
 
 
 def flip_vertical(img):
@@ -12,9 +13,7 @@ def flip_vertical(img):
             for j in range(rgb):
                 out.itemset((i, u, j), img.item(i * -1, u * -1, j))
 
-    cv2.imshow('imagem', out)
-    cv2.waitKey(0)
-    cv2.destroyAllWindows()
+    exibir_imagem(out, 'flip vertical')
     
     return out
 
@@ -28,8 +27,6 @@ def flip_horizontal(img):
             for j in range(rgb):
                 out.itemset((i, u, j), img.item(i, u * -1, j))
 
-    cv2.imshow('imagem', out)
-    cv2.waitKey(0)
-    cv2.destroyAllWindows()
+    exibir_imagem(out, 'flip horizontal')
     
     return out

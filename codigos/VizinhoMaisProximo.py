@@ -1,5 +1,6 @@
 import cv2
 import numpy as np
+from .Utils import exibir_imagem
 
 
 def vizinho_mais_proximo_ampliar(img):
@@ -29,9 +30,7 @@ def vizinho_mais_proximo_ampliar(img):
                         else:
                             out.itemset((i, u, j), out.item(i - 1, u - 1, j))
 
-    cv2.imshow('vizinho mais proximo', out)
-    cv2.waitKey(0)
-    cv2.destroyAllWindows()
+    exibir_imagem(out, 'vizinho mais proximo ampliagem')
     
     return out
 
@@ -44,8 +43,6 @@ def vizinho_mais_proximo_reduzir(img):
             for j in range(rgb):
                 out.itemset((i, u, j), img.item(i * 2, u * 2, j))
 
-    cv2.imshow('vizinho mais proximo', out)
-    cv2.waitKey(0)
-    cv2.destroyAllWindows()
+    exibir_imagem(out, 'vizinho mais proximo reducao')
     
     return out

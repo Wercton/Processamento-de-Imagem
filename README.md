@@ -34,5 +34,6 @@ cv2.imwrite('./resultados/soma.jpg', soma(img1, img2))
 ## ✔️ Funcionalidades
 - [Soma de imagens](https://github.com/Wercton/Processamento-de-Imagem/blob/master/codigos/Soma.py)
 - [Subtração de imagens](https://github.com/Wercton/Processamento-de-Imagem/blob/master/codigos/Subtracao.py)
+- [Flip vertical e horizontal](https://github.com/Wercton/Processamento-de-Imagem/blob/master/codigos/Flip.py)
 - [Interpolação por vizinho mais próximo](https://github.com/Wercton/Processamento-de-Imagem/blob/master/codigos/VizinhoMaisProximo.py)
 - [Interpolação bilinear](https://github.com/Wercton/Processamento-de-Imagem/blob/master/codigos/Bilinear.py)

@@ -5,7 +5,7 @@
 
 ## :spiral_notepad: Descrição do projeto
 
-Este projeto constitui um conjunto dos códigos realizados para a matéria de Processamento de Imagem enquanto estudante do curso de Ciência da Computação na Universidade Federal do Tocantins (UFT).
+Este projeto constitui um conjunto dos códigos realizados para a matéria de Processamento de Imagem, ministrada pela Dra. Glenda Michele Botelho, enquanto estudante do curso de Ciência da Computação na Universidade Federal do Tocantins (UFT).
 
 ## 🔨 Ferramentas usadas
 
@@ -15,7 +15,7 @@ Este projeto constitui um conjunto dos códigos realizados para a matéria de Pr
 
 ## Rodando o projeto
 
-Os algoritmos de manipulação de imagem estão dispersos dentro da pasta `./codigos/`, para usá-los basta chamá-los na main do projeto. As imagens usadas podem ser alteradas, bastando substituí-las na pasta `./imagens/`, sendo **NECESSÁRIO** manter o mesmo nome das originais e que todas a `imagem1` tenha o mesmo tamanho que a `imagem2`.
+Os algoritmos de manipulação de imagem estão dispersos dentro da pasta `./codigos/`, para usá-los basta chamá-los na main do projeto. As imagens usadas podem ser alteradas, bastando substituí-las na pasta `./imagens/`, sendo **NECESSÁRIO** garantir que tanto a `imagem1` tenha o mesmo tamanho que a `imagem2`.
 
 Para instalar as depedências do projeto (recomendável que o faça dentro de um [ambiente virtual](https://docs.python.org/pt-br/3/tutorial/venv.html)), rode o seguinte comando no terminal:
 ```

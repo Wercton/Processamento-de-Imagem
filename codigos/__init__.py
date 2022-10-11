@@ -5,4 +5,6 @@ from .VizinhoMaisProximo import vizinho_mais_proximo_ampliar, vizinho_mais_proxi
 from .Bilinear import bilinear_ampliar, bilinear_reduzir
 from .Rotulacao import rotulacao
 from .Flip import flip_horizontal, flip_vertical
-from .TransformacaoDeIntensidade import trans_log, trans_pot
+from .TransformacaoDeIntensidade import transformacao_log, transformacao_pot
+from .Histograma import histograma
+from .FiltroDaMedia import filtro_da_media

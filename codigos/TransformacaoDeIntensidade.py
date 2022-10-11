@@ -22,7 +22,7 @@ def transformacao_log(img):
                 else:
                     out.itemset((i, u, j), s)
 
-    exibir_imagem(out)
+    exibir_imagem(out, "transformacao log")
     
     return out
 
@@ -44,6 +44,6 @@ def transformacao_pot(img):
                 else:
                     out.itemset((i, u, j), s*255)
 
-    exibir_imagem(out)
+    exibir_imagem(out, "transformacao pot")
     
     return out

@@ -8,3 +8,4 @@ from .Flip import flip_horizontal, flip_vertical
 from .TransformacaoDeIntensidade import transformacao_log, transformacao_pot
 from .Histograma import histograma
 from .FiltroDaMedia import filtro_da_media
+from .FiltroSobel import sobel

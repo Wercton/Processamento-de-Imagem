@@ -12,6 +12,7 @@ Este projeto constitui um conjunto dos códigos realizados para a matéria de Pr
 - ``Python 3.8.10``
 - ``Numpy 1.23.3``
 - ``OpenCV 4.6.0.66``
+- ``Matplotlib 3.6.1``
 
 ## Rodando o projeto
 
@@ -32,8 +33,12 @@ cv2.imwrite('./resultados/soma.jpg', soma(img1, img2))
 ```
 
 ## ✔️ Funcionalidades
+- [Filtro da média](https://github.com/Wercton/Processamento-de-Imagem/blob/master/codigos/FiltroDaMedia.py)
+- [Filtro sobel](https://github.com/Wercton/Processamento-de-Imagem/blob/master/codigos/FiltroSobel.py)
+- [Flip vertical e horizontal](https://github.com/Wercton/Processamento-de-Imagem/blob/master/codigos/Flip.py)
+- [Interpolação bilinear](https://github.com/Wercton/Processamento-de-Imagem/blob/master/codigos/Bilinear.py)
+- [Interpolação por vizinho mais próximo](https://github.com/Wercton/Processamento-de-Imagem/blob/master/codigos/VizinhoMaisProximo.py)
+- [Histograma](https://github.com/Wercton/Processamento-de-Imagem/blob/master/codigos/Histograma.py)
 - [Soma de imagens](https://github.com/Wercton/Processamento-de-Imagem/blob/master/codigos/Soma.py)
 - [Subtração de imagens](https://github.com/Wercton/Processamento-de-Imagem/blob/master/codigos/Subtracao.py)
-- [Flip vertical e horizontal](https://github.com/Wercton/Processamento-de-Imagem/blob/master/codigos/Flip.py)
-- [Interpolação por vizinho mais próximo](https://github.com/Wercton/Processamento-de-Imagem/blob/master/codigos/VizinhoMaisProximo.py)
-- [Interpolação bilinear](https://github.com/Wercton/Processamento-de-Imagem/blob/master/codigos/Bilinear.py)
+- [Transformação de Intensidade](https://github.com/Wercton/Processamento-de-Imagem/blob/master/codigos/TransformacaoDeIntensidade.py)
